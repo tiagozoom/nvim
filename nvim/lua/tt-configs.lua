@@ -1,0 +1,18 @@
+-- Remappings
+vim.cmd('let mapleader=";"')
+vim.cmd('set number')
+vim.cmd('set relativenumber')
+vim.cmd('set expandtab')
+vim.cmd('set tabstop=2')
+vim.cmd('set softtabstop=0 noexpandtab')
+vim.cmd('set shiftwidth=0')
+vim.cmd('set colorcolumn=100')
+vim.cmd('set ignorecase')
+vim.cmd('set smartcase')
+vim.cmd('set splitbelow')
+vim.cmd('set noswapfile')
+vim.cmd('set nohlsearch')
+vim.cmd('set nocompatible')
+
+vim.cmd('colorscheme palenight')
+vim.cmd('filetype plugin on')
