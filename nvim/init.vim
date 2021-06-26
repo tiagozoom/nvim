@@ -1,17 +1,4 @@
 call plug#begin('~/.vim/plugged')
-
-" Use release branch (recommend)
-	Plug 'neoclide/coc.nvim', {'branch': 'release'}
-
-	" Or build from source code by using yarn: https://yarnpkg.com
-	Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
-
-	Plug 'neoclide/coc-json', {'do': 'yarn install --frozen-lockfile'}
-	Plug 'neoclide/coc-tsserver', {'do': 'yarn install --frozen-lockfile'}
-	Plug 'neoclide/coc-eslint', {'do': 'yarn install --frozen-lockfile'}
-	Plug 'neoclide/coc-prettier', {'do': 'yarn install --frozen-lockfile'}
-	Plug 'neoclide/coc-json', {'do': 'yarn install --frozen-lockfile'}
-
 	" Jsx and javascript syntax highlighting
 	Plug 'mxw/vim-jsx'
 	Plug 'pangloss/vim-javascript'
@@ -32,6 +19,9 @@ call plug#begin('~/.vim/plugged')
 
 	" Vimwiki
 	Plug 'vimwiki/vimwiki'
+
+	"COC
+	Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 call plug#end()
 
@@ -89,5 +79,10 @@ let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<c-j>"
 let g:UltiSnipsJumpBackwardTrigger="<c-k>"
 
-" Coc Remappings
-nnoremap <silent> <leader>gd <Plug>(coc-definition)
+"COC configs
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> jd <Plug>(coc-type-definition)
+nmap <silent> gt <Plug>(coc-implementation)
+nmap <silent> rn <Plug>(coc-rename)
+nmap <silent> ma <Plug>(coc-codeaction)
+
