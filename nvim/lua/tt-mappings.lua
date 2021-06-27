@@ -1,5 +1,5 @@
 vim.cmd([[
-	nnoremap <silent> <leader>ec :vsplit $VIMRC<CR>
+	nnoremap <silent> <leader>ec :vsplit $VIMRC_DIR<CR>
 	nnoremap <silent> <leader>rc :source $VIMRC<CR>
 	nnoremap <silent> <leader>w :update<CR>
 	nnoremap <silent> <leader>sa :bd<CR>

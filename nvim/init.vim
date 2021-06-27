@@ -16,15 +16,12 @@ call plug#begin('~/.vim/plugged')
 	" Vimwiki
 	Plug 'vimwiki/vimwiki'
 
-	" LSP
-	Plug 'neovim/nvim-lspconfig'
-
-	" LSP Completion
-	Plug 'nvim-lua/completion-nvim'
+	"COC
+	Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 call plug#end()
 
-:lua require('tt-lsp')
+:lua require('tt-coc')
 :lua require('tt-telescope')
 :lua require('tt-configs')
 :lua require('tt-mappings')
