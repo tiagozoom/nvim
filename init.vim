@@ -32,7 +32,6 @@ call plug#end()
 
 :lua require('tt-configs')
 :lua require('tt-mappings')
-":lua require('tt-lsp')
 :lua require('tt-coc')
 :lua require('tt-vimspector-configs')
 :lua require('tt-telescope')

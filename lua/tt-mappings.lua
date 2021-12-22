@@ -1,5 +1,4 @@
 vim.cmd([[
-	nnoremap <silent> <leader>ec :vsplit $VIMRC<CR>
 	nnoremap <silent> <leader>rc :source $VIMRC/init.vim<CR>
 	nnoremap <silent> <leader>w :update<CR>
 	nnoremap <silent> <leader>sa :bd<CR>
@@ -7,6 +6,8 @@ vim.cmd([[
 
 	nnoremap <silent> <leader>tf :NERDTreeFind<CR>
 	nnoremap <silent> <C-P> <cmd>:lua require('telescope.builtin').find_files()<CR>
+	nnoremap <silent> <leader>ec <cmd>:lua open_configurations()<CR>
+	nnoremap <silent> <leader>sf <cmd>:lua hidden_files()<CR>
 	nnoremap <silent> <leader>ff <cmd>:lua require('telescope.builtin').live_grep()<CR>
 	nnoremap <silent> <leader>fd :lua require('telescope.builtin').buffers({show_all_buffers = true})<CR>
 	nnoremap <leader>fh <cmd>lua require('telescope.builtin').help_tags()<CR>
